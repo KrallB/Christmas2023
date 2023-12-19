@@ -1,24 +1,74 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Password Protected Button</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christmas 2023</title>
     <script>
         function validatePassword() {
             var inputPassword = document.getElementById("password").value;
             var submitButton = document.getElementById("submitBtn");
 
-            if (inputPassword === "qwerty") {
+            if (inputPassword === "merry") {
                 submitButton.disabled = false;
             } else {
                 submitButton.disabled = true;
             }
         }
+
+        function redirectToCards() {
+            window.location.href = 'cards.html';
+        }
     </script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
-<body>
-    <h2>Password Protected Button</h2>
-    <p>Enter password to enable the button:</p>
-    <input type="password" id="password" onkeyup="validatePassword()">
-    <button id="submitBtn" disabled>Click Me</button>
-</body>
+<body > 
+        <div  data-animation="over-right" data-collapse="tiny" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav">
+                <div class="full-width w-container">
+                  <div class="flex-row space-between">
+                    <a href="start.html" aria-current="page" class="logo w-nav-brand w--current" aria-label="home">
+                      <div class="logo-name">Family Christmas Challenge 2023</div>
+                    </a>
+                    
+                  </div>
+                  <div id="w-nav-overlay-0" class="_w-nav-overlay"></div>
+                </div>
+                <div class="w-nav-overlay" data-wf-ignore="" id="w-nav-overlay-0"></div>
+              </div>
+
+
+
+
+<section class="section">
+        <div class="container">
+            <div class="hero-wrapper">
+                    <div  style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); opacity: 1; transform-style: preserve-3d;" class="intro-img">
+                            <img src="images/CutePanda.png" loading="lazy" sizes="(max-width: 479px) 96vw, (max-width: 767px) 90vw, (max-width: 991px) 92vw, 592px" >
+                        </div>
+                <div  style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); opacity: 1; transform-style: preserve-3d;" class="intro-title-white">
+                    <div class="flex-column space-md"><img src="images/Profile.png" loading="lazy" alt="Profil picture" class="img-size-100 rounded">
+                        <h1 style="color: #000000">Password Challenge </h1><h2 style="color: #000000"><br> Trying to guess a simple password feels like playing a high-stakes game of 'The Floor Is Lava' with
+                             my keyboard, where every wrong keystroke means sinking into the abyss of 'incorrect password'!</h2> <br>
+                        <div>
+                            <h2 style="color: #000000"> Enter password to enable the button:<br></h2>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+                        <input type="password" id="password" max-width=20px onkeyup="validatePassword()">
+                        <button id="submitBtn" onclick="redirectToCards()" disabled><h2 style="color: #000000">Click Me</h2></button>
+                        </div>
+
+                          
+
+                    </div>
+                    
+                </div>
+                
+                
+            </div>
+        </div>
+        
+</section>  
+
+
+    
 </html>
