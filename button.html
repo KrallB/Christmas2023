@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Password Protected Button</title>
+    <script>
+        function validatePassword() {
+            var inputPassword = document.getElementById("password").value;
+            var submitButton = document.getElementById("submitBtn");
+
+            if (inputPassword === "qwerty") {
+                submitButton.disabled = false;
+            } else {
+                submitButton.disabled = true;
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>Password Protected Button</h2>
+    <p>Enter password to enable the button:</p>
+    <input type="password" id="password" onkeyup="validatePassword()">
+    <button id="submitBtn" disabled>Click Me</button>
+</body>
+</html>
