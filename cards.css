@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+
+.game-board {
+ /*   width: 600px; */
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr); /* Adjust based on number of cards */
+    grid-gap: 10px;
+    align-content: center;
+}
+
+.card {
+    width: 128px;
+    height: 166px;
+    background-color: #FFF;
+    /* border: 1px solid #000; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/*
+.card img {
+    display: none;
+    width: 50px;
+    height: 70px;
+}
+*/
+
+.card.flipped img {
+    display: block;
+}
+
+#scoreboard {
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: left;
+    font-family: 'Arial', sans-serif;
+    max-width: 600px;
+    margin: 20px auto; 
+}
+
+#player-scores div {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+/* Additional styling for Japanese inspiration */
+#scoreboard h2 {
+    color: #d11141; /* Red color for a Japanese touch */
+}
+.centered-div {
+    margin: 0 auto;
+    width: 50%; /* or any specific width */
+}
+#letters-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.letter-box {
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    margin: 0 5px;
+    text-align: center;
+    line-height: 20px; /* Adjust as necessary */
+}
+
+
+.correct {
+    background-color: green;
+}
+
+.incorrect {
+    background-color: red;
+}
