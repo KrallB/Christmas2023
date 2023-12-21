@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     //Adam
-    const correctOrder = "Merry Xmas CheerMerry Xmas CheerMerry Xmas CheerMerry Xmas CheerMerry Xmas Cheer".replace(/\s/g, '').toUpperCase();
+    const correctOrder = "Merry Xmas Cheer".replace(/\s/g, '').toUpperCase();
     const letterBoxes = document.querySelectorAll('.letter-box');
 
     letterBoxes.forEach((box, index) => {
