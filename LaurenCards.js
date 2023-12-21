@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Letter Display Setup
     var letterIndex = 0;
-    const letters = 'Merry Xmas Cheer';
+    const letters = 'snhibyrmsetgr-re';
 
     // Create game board
     function createBoard() {
