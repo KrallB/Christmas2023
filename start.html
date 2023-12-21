@@ -6,6 +6,73 @@
     <title>Christmas 2023</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <script>
+        function AdamValidatePassword() {
+            var inputPassword = document.getElementById("AdamPassword").value;
+            var submitButton = document.getElementById("AdamSubmitBtn");
+
+            if (inputPassword === "xmas") {
+                submitButton.disabled = false;
+            } else {
+                submitButton.disabled = true;
+            }
+        }
+        function KarinaValidatePassword() {
+            var inputPassword = document.getElementById("KarinaPassword").value;
+            var submitButton = document.getElementById("KarinaSubmitBtn");
+
+            if (inputPassword === "xmas") {
+                submitButton.disabled = false;
+            } else {
+                submitButton.disabled = true;
+            }
+        }
+        function LanaValidatePassword() {
+            var inputPassword = document.getElementById("LanaPassword").value;
+            var submitButton = document.getElementById("LanaSubmitBtn");
+
+            if (inputPassword === "xmas") {
+                submitButton.disabled = false;
+            } else {
+                submitButton.disabled = true;
+            }
+        }
+        function LaurenValidatePassword() {
+            var inputPassword = document.getElementById("LaurenPassword").value;
+            var submitButton = document.getElementById("LaurenSubmitBtn");
+
+            if (inputPassword === "xmas") {
+                submitButton.disabled = false;
+            } else {
+                submitButton.disabled = true;
+            }
+        }
+        function BreeValidatePassword() {
+            var inputPassword = document.getElementById("BreePassword").value;
+            var submitButton = document.getElementById("BreeSubmitBtn");
+
+            if (inputPassword === "xmas") {
+                submitButton.disabled = false;
+            } else {
+                submitButton.disabled = true;
+            }
+        }
+        function AdamRedirectToCards() {
+            window.location.href = 'AdamMission.html';
+        }
+        function LanaRedirectToCards() {
+            window.location.href = 'LanaMission.html';
+        }
+        function BreeRedirectToCards() {
+            window.location.href = 'BreeMission.html';
+        }
+        function LaurenRedirectToCards() {
+            window.location.href = 'LaurenMission.html';
+        }
+        function KarinaRedirectToCards() {
+            window.location.href = 'KarinaMission.html';
+        }
+    </script>
 </head>
 <body>
 
@@ -138,8 +205,8 @@
                                     <div>
                                         <p style="color: #ffffff"> Unlock Your Mission<br></p>
                                         &nbsp;&nbsp;&nbsp;&nbsp;<br><br>
-                                    <input type="password" id="password" max-width=20px onkeyup="validatePassword()"><br><br>
-                                    <button id="submitBtn" onclick="redirectToCards()" disabled><h2 style="color: #000000">Click Me</h2></button>
+                                    <input type="password" id="AdamPassword" max-width=20px onkeyup="AdamValidatePassword()" style="color: #000000"><br><br>
+                                    <button id="AdamSubmitBtn" onclick="AdamRedirectToCards()" disabled><h2 style="color: #000000">Click Me</h2></button>
                                     </div>                             
 
                                 </div>
@@ -151,8 +218,8 @@
                                     <div>
                                         <p style="color: #ffffff"> Unlock Your Mission<br></p>
                                         &nbsp;&nbsp;&nbsp;&nbsp;<br><br>
-                                    <input type="password" id="password" max-width=20px onkeyup="validatePassword()"><br><br>
-                                    <button id="submitBtn" onclick="redirectToCards()" disabled><h2 style="color: #000000">Click Me</h2></button>
+                                    <input type="password" id="KarinaPassword" max-width=20px onkeyup="KarinaValidatePassword()" style="color: #000000"><br><br>
+                                    <button id="KarinaSubmitBtn" onclick="KarinaRedirectToCards()" disabled><h2 style="color: #000000">Click Me</h2></button>
                                     </div>                             
 
                                 </div>
@@ -164,8 +231,8 @@
                                     <div>
                                         <p style="color: #ffffff"> Unlock Your Mission<br></p>
                                         &nbsp;&nbsp;&nbsp;&nbsp;<br><br>
-                                    <input type="password" id="password" max-width=20px onkeyup="validatePassword()"><br><br>
-                                    <button id="submitBtn" onclick="redirectToCards()" disabled><h2 style="color: #000000">Click Me</h2></button>
+                                    <input type="password" id="LaurenPassword" max-width=20px onkeyup="LaurenValidatePassword()" style="color: #000000"><br><br>
+                                    <button id="LaurenSubmitBtn" onclick="LaurenRedirectToCards()" disabled><h2 style="color: #000000">Click Me</h2></button>
                                     </div>                             
 
                                 </div>
@@ -177,8 +244,8 @@
                                     <div>
                                         <p style="color: #ffffff"> Unlock Your Mission<br></p>
                                         &nbsp;&nbsp;&nbsp;&nbsp;<br><br>
-                                    <input type="password" id="password" max-width=20px onkeyup="validatePassword()"><br><br>
-                                    <button id="submitBtn" onclick="redirectToCards()" disabled><h2 style="color: #000000">Click Me</h2></button>
+                                    <input type="password" id="BreePassword" max-width=20px onkeyup="BreeValidatePassword()" style="color: #000000"><br><br>
+                                    <button id="BreeSubmitBtn" onclick="BreeRedirectToCards()" disabled><h2 style="color: #000000">Click Me</h2></button>
                                     </div>                             
 
                                 </div>
@@ -190,8 +257,8 @@
                                     <div>
                                         <p style="color: #ffffff"> Unlock Your Mission<br></p>
                                         &nbsp;&nbsp;&nbsp;&nbsp;<br><br>
-                                    <input type="password" id="password" max-width=20px onkeyup="validatePassword()"><br><br>
-                                    <button id="submitBtn" onclick="redirectToCards()" disabled><h2 style="color: #000000">Click Me</h2></button>
+                                    <input type="password" id="LanaPassword" max-width=20px onkeyup="LanaValidatePassword()" style="color: #000000"><br><br>
+                                    <button id="LanaSubmitBtn" onclick="LanaRedirectToCards()" disabled><h2 style="color: #000000">Click Me</h2></button>
                                     </div>                             
 
                                 </div>
